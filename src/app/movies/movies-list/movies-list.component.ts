@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Movies, MoviesHttpResult } from 'src/app/interfaces/movies';
+import { Movie } from 'src/app/interfaces/movies';
 import { MoviesService } from '../movies.service';
 import { Observable } from 'rxjs';
 
@@ -9,15 +9,12 @@ import { Observable } from 'rxjs';
   styleUrls: ['./movies-list.component.css']
 })
 export class MoviesListComponent implements OnInit {
-  moviesData$!: Observable<Movies[] | undefined>;
+  movies$?: Observable<Movie[] | undefined>;
 
   constructor(private moviesService: MoviesService) { }
 
   ngOnInit(): void {
-  //  this.moviesService.getMovies().subscribe(data => this.moviesData$ = data);
-   this.moviesData$ = this.moviesService.getMovies();
-    console.log(this.moviesData$);
-
+   this.movies$ = this.moviesService.getMovies();
   };
 
 }

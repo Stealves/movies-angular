@@ -1,0 +1,8 @@
+<article>
+  <img [src]="movie?.poster_url" [alt]="movie?.title">
+  <div class="movie-details">
+    <h2>{{ movie?.title }}</h2>
+    <p>{{ movie?.overview }}</p>
+  </div>
+  <a class="button" routerLink="/movies">Go back</a>
+</article>
