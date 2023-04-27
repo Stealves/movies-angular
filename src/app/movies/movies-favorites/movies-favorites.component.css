@@ -1,0 +1,13 @@
+li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.no-items {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #a445f777;
+  text-transform: lowercase;
+  border-radius: 10px;
+  font-size: 2em;
+}

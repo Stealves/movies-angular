@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieDetailHttpResult } from 'src/app/interfaces/movies';
+import { MovieDetailHttpResult } from 'src/app/types/movies';
 import { MoviesService } from '../movies.service';
 import { ActivatedRoute } from '@angular/router';
 

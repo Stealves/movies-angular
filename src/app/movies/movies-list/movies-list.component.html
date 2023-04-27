@@ -1,5 +1,5 @@
-<ul>
+<ul class="unstyled-list">
   <li *ngFor="let item of movies$ | async">
-    <app-movies-item [movie]="item"></app-movies-item>
+    <app-movies-item [movie]="item" [isFavList]="false"></app-movies-item>
   </li>
 </ul>

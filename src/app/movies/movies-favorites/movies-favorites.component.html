@@ -1,0 +1,11 @@
+<ng-container *ngIf="(favorites$ | async)?.length ; else noFavorites">
+  <ul class="unstyled-list">
+    <li *ngFor="let favorite of favorites$ | async">
+      <app-movies-item [movie]="favorite" [isFavList]="true"></app-movies-item>
+    </li>
+  </ul>
+</ng-container>
+
+<ng-template #noFavorites>
+  <p class="no-items">no favorite movies...</p>
+</ng-template>

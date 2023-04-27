@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { MoviesModule } from './movies/movies.module';
 import { HeaderComponent } from './header/header.component';
 import { HomeModule } from './home/home.module';
+import { StoreAppModule } from './store/store.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HomeModule } from './home/home.module';
     HomeModule,
     AppRoutingModule,
     HttpClientModule,
+    StoreAppModule
   ],
   providers: [moviesInterceptorProvider],
   bootstrap: [AppComponent]

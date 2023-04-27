@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { MovieDetailHttpResult, MoviesHttpResult } from '../interfaces/movies';
+import { MovieDetailHttpResult, MoviesHttpResult } from '../types/movies';
 import { catchError, map, retry, throwError } from 'rxjs';
 
 @Injectable({

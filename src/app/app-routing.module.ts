@@ -4,6 +4,7 @@ import { MoviesListComponent } from './movies/movies-list/movies-list.component'
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home/home.component';
 import { MovieDetailComponent } from './movies/movie-detail/movie-detail.component';
+import { MoviesFavoritesComponent } from './movies/movies-favorites/movies-favorites.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: "movies/:id",
     component: MovieDetailComponent
+  },
+  {
+    path: "favorites",
+    component: MoviesFavoritesComponent
   }
 ];
 

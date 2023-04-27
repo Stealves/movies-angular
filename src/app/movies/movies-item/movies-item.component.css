@@ -22,3 +22,30 @@ h2 {
   margin: 0;
   font-size: 30px;
 }
+
+.button__group {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  gap: -3px;
+}
+
+.button__group .button:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.button__group .button:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.favorite .button:last-child {
+  background-color: black;
+  box-shadow: -3px -3px black;
+  transform: translate(0, 0);
+}
+
+.favorite button svg {
+  fill: white;
+}

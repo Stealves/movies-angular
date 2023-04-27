@@ -20,7 +20,8 @@ export interface Movie {
   vote_count: number
   video: boolean
   vote_average: number
-  poster_url?: string
+  poster_url: string
+  isFavorite?: boolean
 }
 
 export interface MovieDetailHttpResult {
